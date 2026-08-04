@@ -65,7 +65,7 @@
     "Sanity": {
       "enabled": true,
       "headers": {
-        "Authorization": "Bearer skzvIZ22rX8550FBQ3ynPWeHcSjSJ5wayj2Nk8u47NeTrTp6WRyNx4wHkhWskGhNp6Zx2x23JMO5tqeI4",
+        "Authorization": "Bearer your bearertoken",
       },
       "url": "https://mcp.sanity.io",
     },
