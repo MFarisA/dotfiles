@@ -1,0 +1,157 @@
+
+{
+  "cli_default_open_behavior": "new_window",
+  "soft_wrap": "editor_width",
+  "agent_servers": {
+    "junie": {
+      "type": "registry",
+    },
+    "gemini": {
+      "type": "registry",
+    },
+    "claude-acp": {
+      "default_config_options": {
+        "fast": "on",
+        "model": "sonnet",
+      },
+      "type": "registry",
+    },
+    "github-copilot-cli": {
+      "type": "registry",
+    },
+  },
+  "git_panel": {
+    "tree_view": true,
+  },
+  "agent": {
+    "default_model": {
+      "effort": "medium",
+      "provider": "zed.dev",
+      "model": "gpt-5.2-codex",
+      "enable_thinking": true,
+    },
+    "commit_message_model": {
+      "provider": "Google",
+      "model": "gemini-3-flash-preview",
+    },
+    "favorite_models": [],
+    "model_parameters": [],
+  },
+  "vim_mode": true,
+  "icon_theme": {
+    "mode": "light",
+    "light": "Material Icon Theme",
+    "dark": "Material Icon Theme",
+  },
+  "ui_font_size": 15,
+  "buffer_font_size": 14,
+  "theme": {
+    "mode": "dark",
+    "light": "Ayu Dark",
+    "dark": "One Dark Pro Vivid",
+  },
+  "autosave": "on_focus_change",
+  "format_on_save": "on",
+  "show_edit_predictions": false,
+  "show_completions_on_input": true,
+  "context_servers": {
+    "mcp-server-context7": {
+      "source": "extension",
+      "enabled": true,
+      "settings": {
+        "default_minimum_tokens": "10000",
+      },
+    },
+    "Sanity": {
+      "enabled": true,
+      "headers": {
+        "Authorization": "Bearer skzvIZ22rX8550FBQ3ynPWeHcSjSJ5wayj2Nk8u47NeTrTp6WRyNx4wHkhWskGhNp6Zx2x23JMO5tqeI4",
+      },
+      "url": "https://mcp.sanity.io",
+    },
+  },
+  "languages": {
+    "PHP": {
+      "language_servers": ["intelephense", "!phpactor", "..."],
+      "formatter": "language_server",
+    },
+  },
+  "file_types": {
+    "PHP": ["*.php"],
+    "Blade": ["*.blade.php"],
+  },
+  "notification_panel": {
+    "dock": "right",
+  },
+  "assistant": {
+    "dock": "right",
+    "generate_commit_message": {
+      "prompt": "Write a clear, concise commit message following the Conventional Commits specification (e.g., feat, fix, refactor, docs, style, chore, test). Format: '<type>(<scope>): <short summary>' or '<type>: <short summary>'. Use lowercase for type and scope, and use imperative present tense (e.g., 'add customer model' not 'added customer model'). Do not wrap the output in quotes or backticks. Return ONLY the commit message string without explanation.",
+    },
+  },
+  "chat_panel": {
+    "button": false,
+    "dock": "bottom",
+  },
+  "outline_panel": {
+    "dock": "right",
+  },
+  "project_panel": {
+    "dock": "right",
+    "auto_fold_dirs": false,
+    "indent_size": 10,
+    "hide_root": true,
+    "git_status": true,
+    "git_status_indicator": true,
+  },
+  "terminal": {
+    "font_family": "FiraCode Nerd Font Mono",
+    "font_size": 12,
+    "line_height": "comfortable",
+  },
+  "minimap": {
+    "show": "never",
+    "thumb": "always",
+    "thumb_border": "right_open",
+    "current_line_highlight": null,
+  },
+  "file_scan_exclusions": [
+    "**/.git",
+    "**/.svn",
+    "**/.hg",
+    "**/CVS",
+    "**/.DS_Store",
+    "**/Thumbs.db",
+    "**/.classpath",
+    "**/.settings",
+    // above is default from Zed
+    "**/out",
+    "**/dist",
+    "**/.husky",
+    "**/.turbo",
+    "**/.vscode-test",
+    "**/.vscode",
+    "**/.next",
+    "**/.storybook",
+    "**/.tap",
+    "**/.nyc_output",
+    "**/report",
+    // Laravel
+    "**/node_modules",
+    "**/vendor",
+  ],
+  "diagnostics": {
+    "inline": {
+      "enabled": true,
+      "update_debounce_ms": 150,
+      "padding": 4,
+      "min_column": 0,
+      "max_severity": null,
+    },
+  },
+  "feature_flags": {
+    "tabular-data-preview": "on",
+    "notebooks": "on",
+  },
+}
+
