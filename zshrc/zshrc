@@ -1,0 +1,8 @@
+# Konfigurasi zsh modular.
+# Loader tipis: source semua file ~/.zshrc.d/*.zsh sesuai urutan sortir nama.
+# Tambah modul baru = simpan .zsh baru dengan prefix angka di ~/.zshrc.d/.
+if [[ -d "$HOME/.zshrc.d" ]]; then
+  for f in "$HOME/.zshrc.d/"*.zsh(N); do
+    source "$f"
+  done
+fi
