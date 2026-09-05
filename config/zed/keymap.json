@@ -131,9 +131,9 @@
   {
     "context": "TabSwitcher",
     "bindings": {
-      "k": "menu::SelectPrevious",
-      "j": "menu::SelectNext",
-      "l": "menu::Confirm",
+      "shift-k": "menu::SelectPrevious",
+      "shift-j": "menu::SelectNext",
+      "shift-l": "menu::Confirm",
       "x": "tab_switcher::CloseSelectedItem",
 
       "cmd-backspace": "tab_switcher::CloseSelectedItem",
@@ -158,12 +158,21 @@
     },
   },
   {
+    "context": "CommandPalette",
+    "bindings": {
+      "shift-h": "menu::SelectParent",
+      "shift-k": "menu::SelectPrevious",
+      "shift-j": "menu::SelectNext",
+      "shift-l": "menu::Confirm",
+    },
+  },
+  {
     "context": "OutlinePanel",
     "bindings": {
-      "h": "menu::SelectParent",
-      "k": "menu::SelectPrevious",
-      "j": "menu::SelectNext",
-      "l": "menu::Confirm",
+      "shift-h": "menu::SelectParent",
+      "shift-k": "menu::SelectPrevious",
+      "shift-j": "menu::SelectNext",
+      "shift-l": "menu::Confirm",
 
       "cmd-backspace": "tab_switcher::CloseSelectedItem",
     },
@@ -196,11 +205,11 @@
       "p": "project_panel::Paste",
       "d": "project_panel::Delete",
       // Directory expansion
-      "l": "project_panel::ExpandSelectedEntry",
-      "h": "project_panel::CollapseSelectedEntry",
+      "shift-l": "project_panel::ExpandSelectedEntry",
+      "shift-h": "project_panel::CollapseSelectedEntry",
       // Move up and down
-      "j": "menu::SelectNext",
-      "k": "menu::SelectPrevious",
+      "shift-j": "menu::SelectNext",
+      "shift-k": "menu::SelectPrevious",
       // "shift-d": "project_panel::Delete"
     },
   },
@@ -213,14 +222,13 @@
   {
     "context": "FileFinder",
     "bindings": {
-      "h": "menu::SelectParent",
-      "k": "menu::SelectPrevious",
-      "j": "menu::SelectNext",
-      "l": "menu::Confirm",
+      "shift-h": "menu::SelectParent",
+      "shift-k": "menu::SelectPrevious",
+      "shift-j": "menu::SelectNext",
+      "shift-l": "menu::Confirm",
 
       "cmd-backspace": "tab_switcher::CloseSelectedItem",
     },
   },
 ]
-
 
