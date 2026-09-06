@@ -167,6 +167,15 @@
     },
   },
   {
+    "context": "Editor && showing_completions",
+    "bindings": {
+      "shift-j": "editor::ContextMenuNext",
+      "shift-k": "editor::ContextMenuPrevious",
+      "shift-l": "editor::ConfirmCompletion",
+      "shift-h": "editor::Cancel",
+    },
+  },
+  {
     "context": "OutlinePanel",
     "bindings": {
       "shift-h": "menu::SelectParent",
